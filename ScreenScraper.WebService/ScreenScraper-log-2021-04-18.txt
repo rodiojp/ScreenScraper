@@ -1,0 +1,6 @@
+2021-04-18 04:13:26 INFO  [185]  ScreenScraper.WebService.MeasurementFetchService - Constructor of MeasurementFetchService
+2021-04-18 04:13:26 INFO  [185]  ScreenScraper.WebService.MeasurementFetchService - GetData
+2021-04-18 04:14:55 INFO  [185]  ScreenScraper.WebService.MeasurementFetchService - Constructor of MeasurementFetchService
+2021-04-18 04:16:11 INFO  [185]  ScreenScraper.WebService.MeasurementFetchService - GetData
+2021-04-18 04:21:39 INFO  [140]  ScreenScraper.WebService.MeasurementFetchService - Constructor of MeasurementFetchService
+2021-04-18 04:21:39 INFO  [140]  ScreenScraper.WebService.MeasurementFetchService - GetData. You entered: 5

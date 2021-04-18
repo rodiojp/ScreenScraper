@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="ScreenScraper.WebService.MeasurementFetchService" CodeBehind="MeasurementFetchService.svc.cs" %>
