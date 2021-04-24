@@ -4,9 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ScreenScraper.Services
+namespace ScreenScraper.Domain.Utilities
 {
-    public class Class1
+    public enum RequestMethod
     {
+        Get,
+        Post,
+        Put,
+        Delete
     }
 }

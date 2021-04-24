@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ScreenScraper.Application
+namespace ScreenScraper.Services.Interfaces
 {
-    public class Class1
+    public interface IScrape
     {
+        Tuple<string, Type>[] Scrape();
     }
 }

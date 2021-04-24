@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScreenScraper.Services", "S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScreenScraper.WebService", "ScreenScraper.WebService\ScreenScraper.WebService.csproj", "{B416617C-D34D-45E1-B1A9-9CD13CFF503B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScreenScraper.Tests", "ScreenScraper.Tests\ScreenScraper.Tests.csproj", "{F1A16F6C-A874-425C-9F10-2D576BCE9925}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{B416617C-D34D-45E1-B1A9-9CD13CFF503B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B416617C-D34D-45E1-B1A9-9CD13CFF503B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B416617C-D34D-45E1-B1A9-9CD13CFF503B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1A16F6C-A874-425C-9F10-2D576BCE9925}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1A16F6C-A874-425C-9F10-2D576BCE9925}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1A16F6C-A874-425C-9F10-2D576BCE9925}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1A16F6C-A874-425C-9F10-2D576BCE9925}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,1046 @@
+2021-04-23 12:03:03 DEBUG [14]  ScreenScraper.WebService.MeasurementFetchService - Running GetMesurementsFromParameters
+2021-04-23 12:03:03 DEBUG [14]  ScreenScraper.WebService.MeasurementFetchService - Credentials:
+User Name: 'a', Password: 'b'
+StartDate: '2021-04-23 12:02:00 AM'
+EndDate: '2021-04-23 12:02:00 AM'
+List of Currencies:
+  Currency: , ID = 298
+
+2021-04-23 12:03:17 ERROR [14]  ScreenScraper.WebService.MeasurementFetchService - Exception:
+
+Unmapped members were found. Review the types and members below.
+Add a custom mapping expression, ignore, add a custom resolver, or modify the source/destination type
+For no matching constructor, add a no-arg ctor, add optional arguments, or map all of the constructor parameters
+========================================================================
+Currency -> CurrencyRateShort (Destination member list)
+ScreenScraper.Domain.Currency -> ScreenScraper.Domain.CurrencyRateShort (Destination member list)
+
+Unmapped properties:
+Date
+OfficialRate
+=======================================================================
+CurrencyDto -> Currency (Destination member list)
+ScreenScraper.Domain.DTOs.CurrencyDto -> ScreenScraper.Domain.Currency (Destination member list)
+
+Unmapped properties:
+ParentID
+Code
+Abbreviation
+Name
+NameBel
+NameEng
+QuotName
+QuotNameBel
+QuotNameEng
+NameMulti
+NameBelMulti
+NameEngMulti
+Scale
+Periodicity
+DateStart
+DateEnd
+No available constructor.
+=========================================================================================
+CurrencyRateShortDto -> CurrencyRateShort (Destination member list)
+ScreenScraper.Domain.DTOs.CurrencyRateShortDto -> ScreenScraper.Domain.CurrencyRateShort (Destination member list)
+
+Unmapped properties:
+CurrencySource
+
+StackTrace:
+   at ScreenScraper.Services.MappingService.CurrencyMappingBuilder.FromCurrencyRateReadingDto(IEnumerable`1 currenciesDto, IEnumerable`1 currencyRatesDto) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\MappingService\CurrencyMappingBuilder.cs:line 32
+   at ScreenScraper.Services.CurrencyRateProvider.BuildCurrencyReading(IEnumerable`1 objects) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\CurrencyRateProvider.cs:line 60
+   at ScreenScraper.Application.WebServiceScrapeManager.GetAndHandleScreenScrapeResult() in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Application\WebServiceScrapeManager.cs:line 57
+   at ScreenScraper.WebService.MeasurementFetchService.BuildMesurementReadings(RunParameters rp, List`1 result) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 93
+   at ScreenScraper.WebService.MeasurementFetchService.GetMesurementsFromParameters(String user, String password, DateTime startDate, DateTime endDate, IEnumerable`1 currencies) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 69
+Source:
+AutoMapper
+TargetSite:
+Void AssertConfigurationIsValid(System.Collections.Generic.IEnumerable`1[AutoMapper.TypeMap])
+BaseException:
+AutoMapper.AutoMapperConfigurationException: 
+Unmapped members were found. Review the types and members below.
+Add a custom mapping expression, ignore, add a custom resolver, or modify the source/destination type
+For no matching constructor, add a no-arg ctor, add optional arguments, or map all of the constructor parameters
+========================================================================
+Currency -> CurrencyRateShort (Destination member list)
+ScreenScraper.Domain.Currency -> ScreenScraper.Domain.CurrencyRateShort (Destination member list)
+
+Unmapped properties:
+Date
+OfficialRate
+=======================================================================
+CurrencyDto -> Currency (Destination member list)
+ScreenScraper.Domain.DTOs.CurrencyDto -> ScreenScraper.Domain.Currency (Destination member list)
+
+Unmapped properties:
+ParentID
+Code
+Abbreviation
+Name
+NameBel
+NameEng
+QuotName
+QuotNameBel
+QuotNameEng
+NameMulti
+NameBelMulti
+NameEngMulti
+Scale
+Periodicity
+DateStart
+DateEnd
+No available constructor.
+=========================================================================================
+CurrencyRateShortDto -> CurrencyRateShort (Destination member list)
+ScreenScraper.Domain.DTOs.CurrencyRateShortDto -> ScreenScraper.Domain.CurrencyRateShort (Destination member list)
+
+Unmapped properties:
+CurrencySource
+
+   at AutoMapper.ConfigurationValidator.AssertConfigurationIsValid(IEnumerable`1 typeMaps)
+   at ScreenScraper.Services.MappingService.CurrencyMappingBuilder.FromCurrencyRateReadingDto(IEnumerable`1 currenciesDto, IEnumerable`1 currencyRatesDto) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\MappingService\CurrencyMappingBuilder.cs:line 32
+   at ScreenScraper.Services.CurrencyRateProvider.BuildCurrencyReading(IEnumerable`1 objects) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\CurrencyRateProvider.cs:line 60
+   at ScreenScraper.Application.WebServiceScrapeManager.GetAndHandleScreenScrapeResult() in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Application\WebServiceScrapeManager.cs:line 57
+   at ScreenScraper.WebService.MeasurementFetchService.BuildMesurementReadings(RunParameters rp, List`1 result) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 93
+   at ScreenScraper.WebService.MeasurementFetchService.GetMesurementsFromParameters(String user, String password, DateTime startDate, DateTime endDate, IEnumerable`1 currencies) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 69
+2021-04-23 12:03:52 DEBUG [24]  ScreenScraper.WebService.MeasurementFetchService - Running GetMesurementsFromParameters
+2021-04-23 12:03:52 DEBUG [24]  ScreenScraper.WebService.MeasurementFetchService - Credentials:
+User Name: 'a', Password: 'b'
+StartDate: '2021-04-23 12:02:00 AM'
+EndDate: '2021-04-23 12:02:00 AM'
+List of Currencies:
+  Currency: , ID = 298
+
+2021-04-23 12:09:18 ERROR [24]  ScreenScraper.WebService.MeasurementFetchService - Exception:
+
+Unmapped members were found. Review the types and members below.
+Add a custom mapping expression, ignore, add a custom resolver, or modify the source/destination type
+For no matching constructor, add a no-arg ctor, add optional arguments, or map all of the constructor parameters
+========================================================================
+Currency -> CurrencyRateShort (Destination member list)
+ScreenScraper.Domain.Currency -> ScreenScraper.Domain.CurrencyRateShort (Destination member list)
+
+Unmapped properties:
+Date
+OfficialRate
+=======================================================================
+CurrencyDto -> Currency (Destination member list)
+ScreenScraper.Domain.DTOs.CurrencyDto -> ScreenScraper.Domain.Currency (Destination member list)
+
+Unmapped properties:
+ParentID
+Code
+Abbreviation
+Name
+NameBel
+NameEng
+QuotName
+QuotNameBel
+QuotNameEng
+NameMulti
+NameBelMulti
+NameEngMulti
+Scale
+Periodicity
+DateStart
+DateEnd
+No available constructor.
+=========================================================================================
+CurrencyRateShortDto -> CurrencyRateShort (Destination member list)
+ScreenScraper.Domain.DTOs.CurrencyRateShortDto -> ScreenScraper.Domain.CurrencyRateShort (Destination member list)
+
+Unmapped properties:
+CurrencySource
+
+StackTrace:
+   at ScreenScraper.Services.MappingService.CurrencyMappingBuilder.FromCurrencyRateReadingDto(IEnumerable`1 currenciesDto, IEnumerable`1 currencyRatesDto) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\MappingService\CurrencyMappingBuilder.cs:line 32
+   at ScreenScraper.Services.CurrencyRateProvider.BuildCurrencyReading(IEnumerable`1 objects) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\CurrencyRateProvider.cs:line 60
+   at ScreenScraper.Application.WebServiceScrapeManager.GetAndHandleScreenScrapeResult() in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Application\WebServiceScrapeManager.cs:line 57
+   at ScreenScraper.WebService.MeasurementFetchService.BuildMesurementReadings(RunParameters rp, List`1 result) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 93
+   at ScreenScraper.WebService.MeasurementFetchService.GetMesurementsFromParameters(String user, String password, DateTime startDate, DateTime endDate, IEnumerable`1 currencies) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 69
+Source:
+AutoMapper
+TargetSite:
+Void AssertConfigurationIsValid(System.Collections.Generic.IEnumerable`1[AutoMapper.TypeMap])
+BaseException:
+AutoMapper.AutoMapperConfigurationException: 
+Unmapped members were found. Review the types and members below.
+Add a custom mapping expression, ignore, add a custom resolver, or modify the source/destination type
+For no matching constructor, add a no-arg ctor, add optional arguments, or map all of the constructor parameters
+========================================================================
+Currency -> CurrencyRateShort (Destination member list)
+ScreenScraper.Domain.Currency -> ScreenScraper.Domain.CurrencyRateShort (Destination member list)
+
+Unmapped properties:
+Date
+OfficialRate
+=======================================================================
+CurrencyDto -> Currency (Destination member list)
+ScreenScraper.Domain.DTOs.CurrencyDto -> ScreenScraper.Domain.Currency (Destination member list)
+
+Unmapped properties:
+ParentID
+Code
+Abbreviation
+Name
+NameBel
+NameEng
+QuotName
+QuotNameBel
+QuotNameEng
+NameMulti
+NameBelMulti
+NameEngMulti
+Scale
+Periodicity
+DateStart
+DateEnd
+No available constructor.
+=========================================================================================
+CurrencyRateShortDto -> CurrencyRateShort (Destination member list)
+ScreenScraper.Domain.DTOs.CurrencyRateShortDto -> ScreenScraper.Domain.CurrencyRateShort (Destination member list)
+
+Unmapped properties:
+CurrencySource
+
+   at AutoMapper.ConfigurationValidator.AssertConfigurationIsValid(IEnumerable`1 typeMaps)
+   at ScreenScraper.Services.MappingService.CurrencyMappingBuilder.FromCurrencyRateReadingDto(IEnumerable`1 currenciesDto, IEnumerable`1 currencyRatesDto) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\MappingService\CurrencyMappingBuilder.cs:line 32
+   at ScreenScraper.Services.CurrencyRateProvider.BuildCurrencyReading(IEnumerable`1 objects) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\CurrencyRateProvider.cs:line 60
+   at ScreenScraper.Application.WebServiceScrapeManager.GetAndHandleScreenScrapeResult() in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Application\WebServiceScrapeManager.cs:line 57
+   at ScreenScraper.WebService.MeasurementFetchService.BuildMesurementReadings(RunParameters rp, List`1 result) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 93
+   at ScreenScraper.WebService.MeasurementFetchService.GetMesurementsFromParameters(String user, String password, DateTime startDate, DateTime endDate, IEnumerable`1 currencies) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 69
+2021-04-23 12:20:27 DEBUG [24]  ScreenScraper.WebService.MeasurementFetchService - Running GetMesurementsFromParameters
+2021-04-23 12:20:27 DEBUG [24]  ScreenScraper.WebService.MeasurementFetchService - Credentials:
+User Name: 'a', Password: 'b'
+StartDate: '2021-04-23 12:20:00 AM'
+EndDate: '2021-04-23 12:20:00 AM'
+List of Currencies:
+  Currency: , ID = 298
+
+2021-04-23 12:20:46 ERROR [24]  ScreenScraper.WebService.MeasurementFetchService - Exception:
+
+Unmapped members were found. Review the types and members below.
+Add a custom mapping expression, ignore, add a custom resolver, or modify the source/destination type
+For no matching constructor, add a no-arg ctor, add optional arguments, or map all of the constructor parameters
+========================================================================================
+CurrencyDto -> CurrencyRateShortDto (Destination member list)
+ScreenScraper.Domain.DTOs.CurrencyDto -> ScreenScraper.Domain.DTOs.CurrencyRateShortDto (Destination member list)
+
+Unmapped properties:
+Date
+Cur_OfficialRate
+========================================================================
+Currency -> CurrencyRateShort (Destination member list)
+ScreenScraper.Domain.Currency -> ScreenScraper.Domain.CurrencyRateShort (Destination member list)
+
+Unmapped properties:
+CurrencySource
+Date
+OfficialRate
+=========================================================================================
+CurrencyRateShortDto -> CurrencyRateShort (Destination member list)
+ScreenScraper.Domain.DTOs.CurrencyRateShortDto -> ScreenScraper.Domain.CurrencyRateShort (Destination member list)
+
+Unmapped properties:
+CurrencySource
+OfficialRate
+
+StackTrace:
+   at ScreenScraper.Services.MappingService.CurrencyMappingBuilder.FromCurrencyRateReadingDto(IEnumerable`1 currenciesDto, IEnumerable`1 currencyRatesDto) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\MappingService\CurrencyMappingBuilder.cs:line 25
+   at ScreenScraper.Services.CurrencyRateProvider.BuildCurrencyReading(IEnumerable`1 objects) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\CurrencyRateProvider.cs:line 60
+   at ScreenScraper.Application.WebServiceScrapeManager.GetAndHandleScreenScrapeResult() in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Application\WebServiceScrapeManager.cs:line 57
+   at ScreenScraper.WebService.MeasurementFetchService.BuildMesurementReadings(RunParameters rp, List`1 result) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 93
+   at ScreenScraper.WebService.MeasurementFetchService.GetMesurementsFromParameters(String user, String password, DateTime startDate, DateTime endDate, IEnumerable`1 currencies) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 69
+Source:
+AutoMapper
+TargetSite:
+Void AssertConfigurationIsValid(System.Collections.Generic.IEnumerable`1[AutoMapper.TypeMap])
+BaseException:
+AutoMapper.AutoMapperConfigurationException: 
+Unmapped members were found. Review the types and members below.
+Add a custom mapping expression, ignore, add a custom resolver, or modify the source/destination type
+For no matching constructor, add a no-arg ctor, add optional arguments, or map all of the constructor parameters
+========================================================================================
+CurrencyDto -> CurrencyRateShortDto (Destination member list)
+ScreenScraper.Domain.DTOs.CurrencyDto -> ScreenScraper.Domain.DTOs.CurrencyRateShortDto (Destination member list)
+
+Unmapped properties:
+Date
+Cur_OfficialRate
+========================================================================
+Currency -> CurrencyRateShort (Destination member list)
+ScreenScraper.Domain.Currency -> ScreenScraper.Domain.CurrencyRateShort (Destination member list)
+
+Unmapped properties:
+CurrencySource
+Date
+OfficialRate
+=========================================================================================
+CurrencyRateShortDto -> CurrencyRateShort (Destination member list)
+ScreenScraper.Domain.DTOs.CurrencyRateShortDto -> ScreenScraper.Domain.CurrencyRateShort (Destination member list)
+
+Unmapped properties:
+CurrencySource
+OfficialRate
+
+   at AutoMapper.ConfigurationValidator.AssertConfigurationIsValid(IEnumerable`1 typeMaps)
+   at ScreenScraper.Services.MappingService.CurrencyMappingBuilder.FromCurrencyRateReadingDto(IEnumerable`1 currenciesDto, IEnumerable`1 currencyRatesDto) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\MappingService\CurrencyMappingBuilder.cs:line 25
+   at ScreenScraper.Services.CurrencyRateProvider.BuildCurrencyReading(IEnumerable`1 objects) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\CurrencyRateProvider.cs:line 60
+   at ScreenScraper.Application.WebServiceScrapeManager.GetAndHandleScreenScrapeResult() in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Application\WebServiceScrapeManager.cs:line 57
+   at ScreenScraper.WebService.MeasurementFetchService.BuildMesurementReadings(RunParameters rp, List`1 result) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 93
+   at ScreenScraper.WebService.MeasurementFetchService.GetMesurementsFromParameters(String user, String password, DateTime startDate, DateTime endDate, IEnumerable`1 currencies) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 69
+2021-04-23 01:20:34 DEBUG [7]  ScreenScraper.WebService.MeasurementFetchService - Running GetMesurementsFromParameters
+2021-04-23 01:20:34 DEBUG [7]  ScreenScraper.WebService.MeasurementFetchService - Credentials:
+User Name: 'a', Password: 'b'
+StartDate: '2021-04-23 1:20:00 AM'
+EndDate: '2021-04-23 1:20:00 AM'
+List of Currencies:
+  Currency: , ID = 298
+
+2021-04-23 01:20:46 ERROR [7]  ScreenScraper.WebService.MeasurementFetchService - Exception:
+
+Unmapped members were found. Review the types and members below.
+Add a custom mapping expression, ignore, add a custom resolver, or modify the source/destination type
+For no matching constructor, add a no-arg ctor, add optional arguments, or map all of the constructor parameters
+========================================================================================
+CurrencyDto -> CurrencyRateShortDto (Destination member list)
+ScreenScraper.Domain.DTOs.CurrencyDto -> ScreenScraper.Domain.DTOs.CurrencyRateShortDto (Destination member list)
+
+Unmapped properties:
+Date
+OfficialRate
+
+StackTrace:
+   at ScreenScraper.Services.MappingService.CurrencyMappingBuilder.FromCurrencyRateReadingDto(IEnumerable`1 currenciesDto, IEnumerable`1 currencyRatesDto) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\MappingService\CurrencyMappingBuilder.cs:line 45
+   at ScreenScraper.Services.CurrencyRateProvider.BuildCurrencyReading(IEnumerable`1 objects) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\CurrencyRateProvider.cs:line 60
+   at ScreenScraper.Application.WebServiceScrapeManager.GetAndHandleScreenScrapeResult() in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Application\WebServiceScrapeManager.cs:line 57
+   at ScreenScraper.WebService.MeasurementFetchService.BuildMesurementReadings(RunParameters rp, List`1 result) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 93
+   at ScreenScraper.WebService.MeasurementFetchService.GetMesurementsFromParameters(String user, String password, DateTime startDate, DateTime endDate, IEnumerable`1 currencies) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 69
+Source:
+AutoMapper
+TargetSite:
+Void AssertConfigurationIsValid(System.Collections.Generic.IEnumerable`1[AutoMapper.TypeMap])
+BaseException:
+AutoMapper.AutoMapperConfigurationException: 
+Unmapped members were found. Review the types and members below.
+Add a custom mapping expression, ignore, add a custom resolver, or modify the source/destination type
+For no matching constructor, add a no-arg ctor, add optional arguments, or map all of the constructor parameters
+========================================================================================
+CurrencyDto -> CurrencyRateShortDto (Destination member list)
+ScreenScraper.Domain.DTOs.CurrencyDto -> ScreenScraper.Domain.DTOs.CurrencyRateShortDto (Destination member list)
+
+Unmapped properties:
+Date
+OfficialRate
+
+   at AutoMapper.ConfigurationValidator.AssertConfigurationIsValid(IEnumerable`1 typeMaps)
+   at ScreenScraper.Services.MappingService.CurrencyMappingBuilder.FromCurrencyRateReadingDto(IEnumerable`1 currenciesDto, IEnumerable`1 currencyRatesDto) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\MappingService\CurrencyMappingBuilder.cs:line 45
+   at ScreenScraper.Services.CurrencyRateProvider.BuildCurrencyReading(IEnumerable`1 objects) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\CurrencyRateProvider.cs:line 60
+   at ScreenScraper.Application.WebServiceScrapeManager.GetAndHandleScreenScrapeResult() in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Application\WebServiceScrapeManager.cs:line 57
+   at ScreenScraper.WebService.MeasurementFetchService.BuildMesurementReadings(RunParameters rp, List`1 result) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 93
+   at ScreenScraper.WebService.MeasurementFetchService.GetMesurementsFromParameters(String user, String password, DateTime startDate, DateTime endDate, IEnumerable`1 currencies) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 69
+2021-04-23 01:21:51 DEBUG [27]  ScreenScraper.WebService.MeasurementFetchService - Running GetMesurementsFromParameters
+2021-04-23 01:21:51 DEBUG [27]  ScreenScraper.WebService.MeasurementFetchService - Credentials:
+User Name: 'a', Password: 'b'
+StartDate: '2021-04-23 1:20:00 AM'
+EndDate: '2021-04-23 1:20:00 AM'
+List of Currencies:
+  Currency: , ID = 298
+
+2021-04-23 01:22:03 ERROR [27]  ScreenScraper.WebService.MeasurementFetchService - Exception:
+
+Unmapped members were found. Review the types and members below.
+Add a custom mapping expression, ignore, add a custom resolver, or modify the source/destination type
+For no matching constructor, add a no-arg ctor, add optional arguments, or map all of the constructor parameters
+========================================================================================
+CurrencyDto -> CurrencyRateShortDto (Destination member list)
+ScreenScraper.Domain.DTOs.CurrencyDto -> ScreenScraper.Domain.DTOs.CurrencyRateShortDto (Destination member list)
+
+Unmapped properties:
+Date
+OfficialRate
+
+StackTrace:
+   at ScreenScraper.Services.MappingService.CurrencyMappingBuilder.FromCurrencyRateReadingDto(IEnumerable`1 currenciesDto, IEnumerable`1 currencyRatesDto) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\MappingService\CurrencyMappingBuilder.cs:line 45
+   at ScreenScraper.Services.CurrencyRateProvider.BuildCurrencyReading(IEnumerable`1 objects) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\CurrencyRateProvider.cs:line 60
+   at ScreenScraper.Application.WebServiceScrapeManager.GetAndHandleScreenScrapeResult() in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Application\WebServiceScrapeManager.cs:line 57
+   at ScreenScraper.WebService.MeasurementFetchService.BuildMesurementReadings(RunParameters rp, List`1 result) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 93
+   at ScreenScraper.WebService.MeasurementFetchService.GetMesurementsFromParameters(String user, String password, DateTime startDate, DateTime endDate, IEnumerable`1 currencies) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 69
+Source:
+AutoMapper
+TargetSite:
+Void AssertConfigurationIsValid(System.Collections.Generic.IEnumerable`1[AutoMapper.TypeMap])
+BaseException:
+AutoMapper.AutoMapperConfigurationException: 
+Unmapped members were found. Review the types and members below.
+Add a custom mapping expression, ignore, add a custom resolver, or modify the source/destination type
+For no matching constructor, add a no-arg ctor, add optional arguments, or map all of the constructor parameters
+========================================================================================
+CurrencyDto -> CurrencyRateShortDto (Destination member list)
+ScreenScraper.Domain.DTOs.CurrencyDto -> ScreenScraper.Domain.DTOs.CurrencyRateShortDto (Destination member list)
+
+Unmapped properties:
+Date
+OfficialRate
+
+   at AutoMapper.ConfigurationValidator.AssertConfigurationIsValid(IEnumerable`1 typeMaps)
+   at ScreenScraper.Services.MappingService.CurrencyMappingBuilder.FromCurrencyRateReadingDto(IEnumerable`1 currenciesDto, IEnumerable`1 currencyRatesDto) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\MappingService\CurrencyMappingBuilder.cs:line 45
+   at ScreenScraper.Services.CurrencyRateProvider.BuildCurrencyReading(IEnumerable`1 objects) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\CurrencyRateProvider.cs:line 60
+   at ScreenScraper.Application.WebServiceScrapeManager.GetAndHandleScreenScrapeResult() in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Application\WebServiceScrapeManager.cs:line 57
+   at ScreenScraper.WebService.MeasurementFetchService.BuildMesurementReadings(RunParameters rp, List`1 result) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 93
+   at ScreenScraper.WebService.MeasurementFetchService.GetMesurementsFromParameters(String user, String password, DateTime startDate, DateTime endDate, IEnumerable`1 currencies) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 69
+2021-04-23 01:22:26 DEBUG [25]  ScreenScraper.WebService.MeasurementFetchService - Running GetMesurementsFromParameters
+2021-04-23 01:22:26 DEBUG [25]  ScreenScraper.WebService.MeasurementFetchService - Credentials:
+User Name: 'a', Password: 'b'
+StartDate: '2021-04-23 1:20:00 AM'
+EndDate: '2021-04-23 1:20:00 AM'
+List of Currencies:
+  Currency: , ID = 298
+
+2021-04-23 01:28:43 ERROR [25]  ScreenScraper.WebService.MeasurementFetchService - Exception:
+
+Unmapped members were found. Review the types and members below.
+Add a custom mapping expression, ignore, add a custom resolver, or modify the source/destination type
+For no matching constructor, add a no-arg ctor, add optional arguments, or map all of the constructor parameters
+========================================================================================
+CurrencyDto -> CurrencyRateShortDto (Destination member list)
+ScreenScraper.Domain.DTOs.CurrencyDto -> ScreenScraper.Domain.DTOs.CurrencyRateShortDto (Destination member list)
+
+Unmapped properties:
+Date
+OfficialRate
+
+StackTrace:
+   at ScreenScraper.Services.MappingService.CurrencyMappingBuilder.FromCurrencyRateReadingDto(IEnumerable`1 currenciesDto, IEnumerable`1 currencyRatesDto) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\MappingService\CurrencyMappingBuilder.cs:line 45
+   at ScreenScraper.Services.CurrencyRateProvider.BuildCurrencyReading(IEnumerable`1 objects) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\CurrencyRateProvider.cs:line 60
+   at ScreenScraper.Application.WebServiceScrapeManager.GetAndHandleScreenScrapeResult() in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Application\WebServiceScrapeManager.cs:line 57
+   at ScreenScraper.WebService.MeasurementFetchService.BuildMesurementReadings(RunParameters rp, List`1 result) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 93
+   at ScreenScraper.WebService.MeasurementFetchService.GetMesurementsFromParameters(String user, String password, DateTime startDate, DateTime endDate, IEnumerable`1 currencies) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 69
+Source:
+AutoMapper
+TargetSite:
+Void AssertConfigurationIsValid(System.Collections.Generic.IEnumerable`1[AutoMapper.TypeMap])
+BaseException:
+AutoMapper.AutoMapperConfigurationException: 
+Unmapped members were found. Review the types and members below.
+Add a custom mapping expression, ignore, add a custom resolver, or modify the source/destination type
+For no matching constructor, add a no-arg ctor, add optional arguments, or map all of the constructor parameters
+========================================================================================
+CurrencyDto -> CurrencyRateShortDto (Destination member list)
+ScreenScraper.Domain.DTOs.CurrencyDto -> ScreenScraper.Domain.DTOs.CurrencyRateShortDto (Destination member list)
+
+Unmapped properties:
+Date
+OfficialRate
+
+   at AutoMapper.ConfigurationValidator.AssertConfigurationIsValid(IEnumerable`1 typeMaps)
+   at ScreenScraper.Services.MappingService.CurrencyMappingBuilder.FromCurrencyRateReadingDto(IEnumerable`1 currenciesDto, IEnumerable`1 currencyRatesDto) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\MappingService\CurrencyMappingBuilder.cs:line 45
+   at ScreenScraper.Services.CurrencyRateProvider.BuildCurrencyReading(IEnumerable`1 objects) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\CurrencyRateProvider.cs:line 60
+   at ScreenScraper.Application.WebServiceScrapeManager.GetAndHandleScreenScrapeResult() in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Application\WebServiceScrapeManager.cs:line 57
+   at ScreenScraper.WebService.MeasurementFetchService.BuildMesurementReadings(RunParameters rp, List`1 result) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 93
+   at ScreenScraper.WebService.MeasurementFetchService.GetMesurementsFromParameters(String user, String password, DateTime startDate, DateTime endDate, IEnumerable`1 currencies) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 69
+2021-04-23 01:30:22 DEBUG [13]  ScreenScraper.WebService.MeasurementFetchService - Running GetMesurementsFromParameters
+2021-04-23 01:30:22 DEBUG [13]  ScreenScraper.WebService.MeasurementFetchService - Credentials:
+User Name: 'a', Password: 'b'
+StartDate: '2021-04-23 1:30:00 AM'
+EndDate: '2021-04-23 1:30:00 AM'
+List of Currencies:
+  Currency: , ID = 298
+
+2021-04-23 01:31:24 ERROR [13]  ScreenScraper.WebService.MeasurementFetchService - Exception:
+The following member on ScreenScraper.Domain.CurrencyRateShort cannot be mapped: 
+	CurrencySource 
+Add a custom mapping expression, ignore, add a custom resolver, or modify the destination type ScreenScraper.Domain.CurrencyRateShort.
+Context:
+	Mapping to member CurrencySource from ScreenScraper.Domain.DTOs.CurrencyRateShortDto to ScreenScraper.Domain.CurrencyRateShort
+Exception of type 'AutoMapper.AutoMapperConfigurationException' was thrown.
+StackTrace:
+   at AutoMapper.ConfigurationValidator.AssertConfigurationIsValid(IEnumerable`1 typeMaps)
+   at ScreenScraper.Services.MappingService.CurrencyMappingBuilder.FromCurrencyRateReadingDto(IEnumerable`1 currenciesDto, IEnumerable`1 currencyRatesDto) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\MappingService\CurrencyMappingBuilder.cs:line 47
+   at ScreenScraper.Services.CurrencyRateProvider.BuildCurrencyReading(IEnumerable`1 objects) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\CurrencyRateProvider.cs:line 60
+   at ScreenScraper.Application.WebServiceScrapeManager.GetAndHandleScreenScrapeResult() in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Application\WebServiceScrapeManager.cs:line 57
+   at ScreenScraper.WebService.MeasurementFetchService.BuildMesurementReadings(RunParameters rp, List`1 result) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 93
+   at ScreenScraper.WebService.MeasurementFetchService.GetMesurementsFromParameters(String user, String password, DateTime startDate, DateTime endDate, IEnumerable`1 currencies) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 69
+Source:
+AutoMapper
+TargetSite:
+Void AssertConfigurationIsValid(System.Collections.Generic.IEnumerable`1[AutoMapper.TypeMap])
+BaseException:
+AutoMapper.AutoMapperConfigurationException: The following member on ScreenScraper.Domain.CurrencyRateShort cannot be mapped: 
+	CurrencySource 
+Add a custom mapping expression, ignore, add a custom resolver, or modify the destination type ScreenScraper.Domain.CurrencyRateShort.
+Context:
+	Mapping to member CurrencySource from ScreenScraper.Domain.DTOs.CurrencyRateShortDto to ScreenScraper.Domain.CurrencyRateShort
+Exception of type 'AutoMapper.AutoMapperConfigurationException' was thrown.
+   at AutoMapper.ConfigurationValidator.AssertConfigurationIsValid(IEnumerable`1 typeMaps)
+   at ScreenScraper.Services.MappingService.CurrencyMappingBuilder.FromCurrencyRateReadingDto(IEnumerable`1 currenciesDto, IEnumerable`1 currencyRatesDto) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\MappingService\CurrencyMappingBuilder.cs:line 47
+   at ScreenScraper.Services.CurrencyRateProvider.BuildCurrencyReading(IEnumerable`1 objects) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\CurrencyRateProvider.cs:line 60
+   at ScreenScraper.Application.WebServiceScrapeManager.GetAndHandleScreenScrapeResult() in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Application\WebServiceScrapeManager.cs:line 57
+   at ScreenScraper.WebService.MeasurementFetchService.BuildMesurementReadings(RunParameters rp, List`1 result) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 93
+   at ScreenScraper.WebService.MeasurementFetchService.GetMesurementsFromParameters(String user, String password, DateTime startDate, DateTime endDate, IEnumerable`1 currencies) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 69
+2021-04-23 01:37:56 DEBUG [48]  ScreenScraper.WebService.MeasurementFetchService - Running GetMesurementsFromParameters
+2021-04-23 01:37:56 DEBUG [48]  ScreenScraper.WebService.MeasurementFetchService - Credentials:
+User Name: 'a', Password: 'b'
+StartDate: '2021-04-23 1:37:00 AM'
+EndDate: '2021-04-23 1:37:00 AM'
+List of Currencies:
+  Currency: , ID = 298
+
+2021-04-23 01:44:13 DEBUG [48]  ScreenScraper.WebService.MeasurementFetchService - Running GetMesurementsFromParameters
+2021-04-23 01:44:13 DEBUG [48]  ScreenScraper.WebService.MeasurementFetchService - Credentials:
+User Name: 'a', Password: 'b'
+StartDate: '2021-04-23 1:43:00 AM'
+EndDate: '2021-04-23 1:43:00 AM'
+List of Currencies:
+  Currency: , ID = 298
+
+2021-04-23 01:53:49 DEBUG [57]  ScreenScraper.WebService.MeasurementFetchService - Running GetMesurementsFromParameters
+2021-04-23 01:53:49 DEBUG [57]  ScreenScraper.WebService.MeasurementFetchService - Credentials:
+User Name: 'a', Password: 'b'
+StartDate: '2021-04-23 1:53:00 AM'
+EndDate: '2021-04-23 1:53:00 AM'
+List of Currencies:
+  Currency: , ID = 298
+
+2021-04-23 01:54:04 ERROR [57]  ScreenScraper.WebService.MeasurementFetchService - Exception:
+Expression 'dest => dest.CurrencySource.ID' must resolve to top-level member and not any child object's properties. You can use ForPath, a custom resolver on the child type or the AfterMap option instead.
+Parameter name: lambdaExpression
+StackTrace:
+   at AutoMapper.Internal.ReflectionHelper.FindProperty(LambdaExpression lambdaExpression)
+   at AutoMapper.Configuration.MappingExpression`2.ForMember[TMember](Expression`1 destinationMember, Action`1 memberOptions)
+   at ScreenScraper.Services.MappingService.CurrencyMappingBuilder.<>c.<FromCurrencyRateReadingDto>b__0_0(IMapperConfigurationExpression cfg) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\MappingService\CurrencyMappingBuilder.cs:line 44
+   at AutoMapper.MapperConfiguration.Build(Action`1 configure)
+   at AutoMapper.MapperConfiguration..ctor(Action`1 configure)
+   at ScreenScraper.Services.MappingService.CurrencyMappingBuilder.FromCurrencyRateReadingDto(IEnumerable`1 currenciesDto, IEnumerable`1 currencyRatesDto) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\MappingService\CurrencyMappingBuilder.cs:line 18
+   at ScreenScraper.Services.CurrencyRateProvider.BuildCurrencyReading(IEnumerable`1 objects) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\CurrencyRateProvider.cs:line 60
+   at ScreenScraper.Application.WebServiceScrapeManager.GetAndHandleScreenScrapeResult() in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Application\WebServiceScrapeManager.cs:line 57
+   at ScreenScraper.WebService.MeasurementFetchService.BuildMesurementReadings(RunParameters rp, List`1 result) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 93
+   at ScreenScraper.WebService.MeasurementFetchService.GetMesurementsFromParameters(String user, String password, DateTime startDate, DateTime endDate, IEnumerable`1 currencies) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 69
+Source:
+AutoMapper
+TargetSite:
+System.Reflection.MemberInfo FindProperty(System.Linq.Expressions.LambdaExpression)
+BaseException:
+System.ArgumentException: Expression 'dest => dest.CurrencySource.ID' must resolve to top-level member and not any child object's properties. You can use ForPath, a custom resolver on the child type or the AfterMap option instead.
+Parameter name: lambdaExpression
+   at AutoMapper.Internal.ReflectionHelper.FindProperty(LambdaExpression lambdaExpression)
+   at AutoMapper.Configuration.MappingExpression`2.ForMember[TMember](Expression`1 destinationMember, Action`1 memberOptions)
+   at ScreenScraper.Services.MappingService.CurrencyMappingBuilder.<>c.<FromCurrencyRateReadingDto>b__0_0(IMapperConfigurationExpression cfg) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\MappingService\CurrencyMappingBuilder.cs:line 44
+   at AutoMapper.MapperConfiguration.Build(Action`1 configure)
+   at AutoMapper.MapperConfiguration..ctor(Action`1 configure)
+   at ScreenScraper.Services.MappingService.CurrencyMappingBuilder.FromCurrencyRateReadingDto(IEnumerable`1 currenciesDto, IEnumerable`1 currencyRatesDto) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\MappingService\CurrencyMappingBuilder.cs:line 18
+   at ScreenScraper.Services.CurrencyRateProvider.BuildCurrencyReading(IEnumerable`1 objects) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\CurrencyRateProvider.cs:line 60
+   at ScreenScraper.Application.WebServiceScrapeManager.GetAndHandleScreenScrapeResult() in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Application\WebServiceScrapeManager.cs:line 57
+   at ScreenScraper.WebService.MeasurementFetchService.BuildMesurementReadings(RunParameters rp, List`1 result) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 93
+   at ScreenScraper.WebService.MeasurementFetchService.GetMesurementsFromParameters(String user, String password, DateTime startDate, DateTime endDate, IEnumerable`1 currencies) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 69
+2021-04-23 10:27:05 DEBUG [12]  ScreenScraper.WebService.MeasurementFetchService - Running GetMesurementsFromParameters
+2021-04-23 10:27:05 DEBUG [12]  ScreenScraper.WebService.MeasurementFetchService - Credentials:
+User Name: 'a', Password: 'b'
+StartDate: '2021-04-23 10:26:00 AM'
+EndDate: '2021-04-23 10:26:00 AM'
+List of Currencies:
+  Currency: , ID = 298
+
+2021-04-23 10:27:28 ERROR [12]  ScreenScraper.WebService.MeasurementFetchService - Exception:
+
+Unmapped members were found. Review the types and members below.
+Add a custom mapping expression, ignore, add a custom resolver, or modify the source/destination type
+For no matching constructor, add a no-arg ctor, add optional arguments, or map all of the constructor parameters
+================================================================================
+CurrencyDto -> CurrencyRateShort (Destination member list)
+ScreenScraper.Domain.DTOs.CurrencyDto -> ScreenScraper.Domain.CurrencyRateShort (Destination member list)
+
+Unmapped properties:
+Date
+OfficialRate
+
+StackTrace:
+   at ScreenScraper.Services.MappingService.CurrencyMappingBuilder.FromCurrencyRateReadingDto(IEnumerable`1 currenciesDto, IEnumerable`1 currencyRatesDto) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\MappingService\CurrencyMappingBuilder.cs:line 57
+   at ScreenScraper.Services.CurrencyRateProvider.BuildCurrencyReading(IEnumerable`1 objects) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\CurrencyRateProvider.cs:line 60
+   at ScreenScraper.Application.WebServiceScrapeManager.GetAndHandleScreenScrapeResult() in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Application\WebServiceScrapeManager.cs:line 57
+   at ScreenScraper.WebService.MeasurementFetchService.BuildMesurementReadings(RunParameters rp, List`1 result) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 93
+   at ScreenScraper.WebService.MeasurementFetchService.GetMesurementsFromParameters(String user, String password, DateTime startDate, DateTime endDate, IEnumerable`1 currencies) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 69
+Source:
+AutoMapper
+TargetSite:
+Void AssertConfigurationIsValid(System.Collections.Generic.IEnumerable`1[AutoMapper.TypeMap])
+BaseException:
+AutoMapper.AutoMapperConfigurationException: 
+Unmapped members were found. Review the types and members below.
+Add a custom mapping expression, ignore, add a custom resolver, or modify the source/destination type
+For no matching constructor, add a no-arg ctor, add optional arguments, or map all of the constructor parameters
+================================================================================
+CurrencyDto -> CurrencyRateShort (Destination member list)
+ScreenScraper.Domain.DTOs.CurrencyDto -> ScreenScraper.Domain.CurrencyRateShort (Destination member list)
+
+Unmapped properties:
+Date
+OfficialRate
+
+   at AutoMapper.ConfigurationValidator.AssertConfigurationIsValid(IEnumerable`1 typeMaps)
+   at ScreenScraper.Services.MappingService.CurrencyMappingBuilder.FromCurrencyRateReadingDto(IEnumerable`1 currenciesDto, IEnumerable`1 currencyRatesDto) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\MappingService\CurrencyMappingBuilder.cs:line 57
+   at ScreenScraper.Services.CurrencyRateProvider.BuildCurrencyReading(IEnumerable`1 objects) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\CurrencyRateProvider.cs:line 60
+   at ScreenScraper.Application.WebServiceScrapeManager.GetAndHandleScreenScrapeResult() in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Application\WebServiceScrapeManager.cs:line 57
+   at ScreenScraper.WebService.MeasurementFetchService.BuildMesurementReadings(RunParameters rp, List`1 result) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 93
+   at ScreenScraper.WebService.MeasurementFetchService.GetMesurementsFromParameters(String user, String password, DateTime startDate, DateTime endDate, IEnumerable`1 currencies) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 69
+2021-04-23 10:29:46 DEBUG [30]  ScreenScraper.WebService.MeasurementFetchService - Running GetMesurementsFromParameters
+2021-04-23 10:29:46 DEBUG [30]  ScreenScraper.WebService.MeasurementFetchService - Credentials:
+User Name: 'a', Password: 'b'
+StartDate: '2021-04-23 10:29:00 AM'
+EndDate: '2021-04-23 10:29:00 AM'
+List of Currencies:
+  Currency: , ID = 298
+
+2021-04-23 10:30:06 ERROR [30]  ScreenScraper.WebService.MeasurementFetchService - Exception:
+One or more errors occurred.
+The following member on ScreenScraper.Domain.CurrencyRateShort cannot be mapped: 
+	CurrencySource 
+Add a custom mapping expression, ignore, add a custom resolver, or modify the destination type ScreenScraper.Domain.CurrencyRateShort.
+Context:
+	Mapping to member CurrencySource from ScreenScraper.Domain.DTOs.CurrencyRateShortDto to ScreenScraper.Domain.CurrencyRateShort
+Exception of type 'AutoMapper.AutoMapperConfigurationException' was thrown.
+StackTrace:
+   at AutoMapper.ConfigurationValidator.AssertConfigurationIsValid(IEnumerable`1 typeMaps)
+   at ScreenScraper.Services.MappingService.CurrencyMappingBuilder.FromCurrencyRateReadingDto(IEnumerable`1 currenciesDto, IEnumerable`1 currencyRatesDto) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\MappingService\CurrencyMappingBuilder.cs:line 57
+   at ScreenScraper.Services.CurrencyRateProvider.BuildCurrencyReading(IEnumerable`1 objects) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\CurrencyRateProvider.cs:line 60
+   at ScreenScraper.Application.WebServiceScrapeManager.GetAndHandleScreenScrapeResult() in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Application\WebServiceScrapeManager.cs:line 57
+   at ScreenScraper.WebService.MeasurementFetchService.BuildMesurementReadings(RunParameters rp, List`1 result) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 93
+   at ScreenScraper.WebService.MeasurementFetchService.GetMesurementsFromParameters(String user, String password, DateTime startDate, DateTime endDate, IEnumerable`1 currencies) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 69
+Source:
+AutoMapper
+TargetSite:
+Void AssertConfigurationIsValid(System.Collections.Generic.IEnumerable`1[AutoMapper.TypeMap])
+BaseException:
+System.AggregateException: One or more errors occurred. ---> AutoMapper.AutoMapperConfigurationException: The following member on ScreenScraper.Domain.CurrencyRateShort cannot be mapped: 
+	CurrencySource 
+Add a custom mapping expression, ignore, add a custom resolver, or modify the destination type ScreenScraper.Domain.CurrencyRateShort.
+Context:
+	Mapping to member CurrencySource from ScreenScraper.Domain.DTOs.CurrencyRateShortDto to ScreenScraper.Domain.CurrencyRateShort
+Exception of type 'AutoMapper.AutoMapperConfigurationException' was thrown.
+   at AutoMapper.ConfigurationValidator.DryRunTypeMap(ICollection`1 typeMapsChecked, TypePair types, TypeMap typeMap, IMemberMap memberMap)
+   at AutoMapper.ConfigurationValidator.CheckPropertyMaps(ICollection`1 typeMapsChecked, TypeMap typeMap)
+   at AutoMapper.ConfigurationValidator.DryRunTypeMap(ICollection`1 typeMapsChecked, TypePair types, TypeMap typeMap, IMemberMap memberMap)
+   at AutoMapper.ConfigurationValidator.AssertConfigurationIsValid(IEnumerable`1 typeMaps)
+   --- End of inner exception stack trace ---
+   at AutoMapper.ConfigurationValidator.AssertConfigurationIsValid(IEnumerable`1 typeMaps)
+   at ScreenScraper.Services.MappingService.CurrencyMappingBuilder.FromCurrencyRateReadingDto(IEnumerable`1 currenciesDto, IEnumerable`1 currencyRatesDto) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\MappingService\CurrencyMappingBuilder.cs:line 57
+   at ScreenScraper.Services.CurrencyRateProvider.BuildCurrencyReading(IEnumerable`1 objects) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\CurrencyRateProvider.cs:line 60
+   at ScreenScraper.Application.WebServiceScrapeManager.GetAndHandleScreenScrapeResult() in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Application\WebServiceScrapeManager.cs:line 57
+   at ScreenScraper.WebService.MeasurementFetchService.BuildMesurementReadings(RunParameters rp, List`1 result) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 93
+   at ScreenScraper.WebService.MeasurementFetchService.GetMesurementsFromParameters(String user, String password, DateTime startDate, DateTime endDate, IEnumerable`1 currencies) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 69
+---> (Inner Exception #0) AutoMapper.AutoMapperConfigurationException: The following member on ScreenScraper.Domain.CurrencyRateShort cannot be mapped: 
+	CurrencySource 
+Add a custom mapping expression, ignore, add a custom resolver, or modify the destination type ScreenScraper.Domain.CurrencyRateShort.
+Context:
+	Mapping to member CurrencySource from ScreenScraper.Domain.DTOs.CurrencyRateShortDto to ScreenScraper.Domain.CurrencyRateShort
+Exception of type 'AutoMapper.AutoMapperConfigurationException' was thrown.
+   at AutoMapper.ConfigurationValidator.DryRunTypeMap(ICollection`1 typeMapsChecked, TypePair types, TypeMap typeMap, IMemberMap memberMap)
+   at AutoMapper.ConfigurationValidator.CheckPropertyMaps(ICollection`1 typeMapsChecked, TypeMap typeMap)
+   at AutoMapper.ConfigurationValidator.DryRunTypeMap(ICollection`1 typeMapsChecked, TypePair types, TypeMap typeMap, IMemberMap memberMap)
+   at AutoMapper.ConfigurationValidator.AssertConfigurationIsValid(IEnumerable`1 typeMaps)<---
+
+---> (Inner Exception #1) AutoMapper.AutoMapperConfigurationException: The following member on ScreenScraper.Domain.CurrencyRateShort cannot be mapped: 
+	CurrencySource 
+Add a custom mapping expression, ignore, add a custom resolver, or modify the destination type ScreenScraper.Domain.CurrencyRateShort.
+Context:
+	Mapping to member CurrencySource from ScreenScraper.Domain.DTOs.CurrencyDto to ScreenScraper.Domain.CurrencyRateShort
+Exception of type 'AutoMapper.AutoMapperConfigurationException' was thrown.
+   at AutoMapper.ConfigurationValidator.DryRunTypeMap(ICollection`1 typeMapsChecked, TypePair types, TypeMap typeMap, IMemberMap memberMap)
+   at AutoMapper.ConfigurationValidator.CheckPropertyMaps(ICollection`1 typeMapsChecked, TypeMap typeMap)
+   at AutoMapper.ConfigurationValidator.DryRunTypeMap(ICollection`1 typeMapsChecked, TypePair types, TypeMap typeMap, IMemberMap memberMap)
+   at AutoMapper.ConfigurationValidator.AssertConfigurationIsValid(IEnumerable`1 typeMaps)<---
+
+2021-04-23 10:32:41 DEBUG [30]  ScreenScraper.WebService.MeasurementFetchService - Running GetMesurementsFromParameters
+2021-04-23 10:32:41 DEBUG [30]  ScreenScraper.WebService.MeasurementFetchService - Credentials:
+User Name: 'a', Password: 'b'
+StartDate: '2021-04-23 10:32:00 AM'
+EndDate: '2021-04-23 10:32:00 AM'
+List of Currencies:
+  Currency: , ID = 298
+
+2021-04-23 10:32:46 ERROR [30]  ScreenScraper.WebService.MeasurementFetchService - Exception:
+The following member on ScreenScraper.Domain.CurrencyRateShort cannot be mapped: 
+	CurrencySource 
+Add a custom mapping expression, ignore, add a custom resolver, or modify the destination type ScreenScraper.Domain.CurrencyRateShort.
+Context:
+	Mapping to member CurrencySource from ScreenScraper.Domain.DTOs.CurrencyDto to ScreenScraper.Domain.CurrencyRateShort
+Exception of type 'AutoMapper.AutoMapperConfigurationException' was thrown.
+StackTrace:
+   at AutoMapper.ConfigurationValidator.AssertConfigurationIsValid(IEnumerable`1 typeMaps)
+   at ScreenScraper.Services.MappingService.CurrencyMappingBuilder.FromCurrencyRateReadingDto(IEnumerable`1 currenciesDto, IEnumerable`1 currencyRatesDto) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\MappingService\CurrencyMappingBuilder.cs:line 59
+   at ScreenScraper.Services.CurrencyRateProvider.BuildCurrencyReading(IEnumerable`1 objects) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\CurrencyRateProvider.cs:line 60
+   at ScreenScraper.Application.WebServiceScrapeManager.GetAndHandleScreenScrapeResult() in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Application\WebServiceScrapeManager.cs:line 57
+   at ScreenScraper.WebService.MeasurementFetchService.BuildMesurementReadings(RunParameters rp, List`1 result) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 93
+   at ScreenScraper.WebService.MeasurementFetchService.GetMesurementsFromParameters(String user, String password, DateTime startDate, DateTime endDate, IEnumerable`1 currencies) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 69
+Source:
+AutoMapper
+TargetSite:
+Void AssertConfigurationIsValid(System.Collections.Generic.IEnumerable`1[AutoMapper.TypeMap])
+BaseException:
+AutoMapper.AutoMapperConfigurationException: The following member on ScreenScraper.Domain.CurrencyRateShort cannot be mapped: 
+	CurrencySource 
+Add a custom mapping expression, ignore, add a custom resolver, or modify the destination type ScreenScraper.Domain.CurrencyRateShort.
+Context:
+	Mapping to member CurrencySource from ScreenScraper.Domain.DTOs.CurrencyDto to ScreenScraper.Domain.CurrencyRateShort
+Exception of type 'AutoMapper.AutoMapperConfigurationException' was thrown.
+   at AutoMapper.ConfigurationValidator.AssertConfigurationIsValid(IEnumerable`1 typeMaps)
+   at ScreenScraper.Services.MappingService.CurrencyMappingBuilder.FromCurrencyRateReadingDto(IEnumerable`1 currenciesDto, IEnumerable`1 currencyRatesDto) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\MappingService\CurrencyMappingBuilder.cs:line 59
+   at ScreenScraper.Services.CurrencyRateProvider.BuildCurrencyReading(IEnumerable`1 objects) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\CurrencyRateProvider.cs:line 60
+   at ScreenScraper.Application.WebServiceScrapeManager.GetAndHandleScreenScrapeResult() in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Application\WebServiceScrapeManager.cs:line 57
+   at ScreenScraper.WebService.MeasurementFetchService.BuildMesurementReadings(RunParameters rp, List`1 result) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 93
+   at ScreenScraper.WebService.MeasurementFetchService.GetMesurementsFromParameters(String user, String password, DateTime startDate, DateTime endDate, IEnumerable`1 currencies) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 69
+2021-04-23 10:32:57 DEBUG [30]  ScreenScraper.WebService.MeasurementFetchService - Running GetMesurementsFromParameters
+2021-04-23 10:32:57 DEBUG [30]  ScreenScraper.WebService.MeasurementFetchService - Credentials:
+User Name: 'a', Password: 'b'
+StartDate: '2021-04-23 10:32:00 AM'
+EndDate: '2021-04-23 10:32:00 AM'
+List of Currencies:
+  Currency: , ID = 298
+
+2021-04-23 10:40:21 ERROR [30]  ScreenScraper.WebService.MeasurementFetchService - Exception:
+The following member on ScreenScraper.Domain.CurrencyRateShort cannot be mapped: 
+	CurrencySource 
+Add a custom mapping expression, ignore, add a custom resolver, or modify the destination type ScreenScraper.Domain.CurrencyRateShort.
+Context:
+	Mapping to member CurrencySource from ScreenScraper.Domain.DTOs.CurrencyDto to ScreenScraper.Domain.CurrencyRateShort
+Exception of type 'AutoMapper.AutoMapperConfigurationException' was thrown.
+StackTrace:
+   at AutoMapper.ConfigurationValidator.AssertConfigurationIsValid(IEnumerable`1 typeMaps)
+   at ScreenScraper.Services.MappingService.CurrencyMappingBuilder.FromCurrencyRateReadingDto(IEnumerable`1 currenciesDto, IEnumerable`1 currencyRatesDto) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\MappingService\CurrencyMappingBuilder.cs:line 59
+   at ScreenScraper.Services.CurrencyRateProvider.BuildCurrencyReading(IEnumerable`1 objects) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\CurrencyRateProvider.cs:line 60
+   at ScreenScraper.Application.WebServiceScrapeManager.GetAndHandleScreenScrapeResult() in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Application\WebServiceScrapeManager.cs:line 57
+   at ScreenScraper.WebService.MeasurementFetchService.BuildMesurementReadings(RunParameters rp, List`1 result) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 93
+   at ScreenScraper.WebService.MeasurementFetchService.GetMesurementsFromParameters(String user, String password, DateTime startDate, DateTime endDate, IEnumerable`1 currencies) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 69
+Source:
+AutoMapper
+TargetSite:
+Void AssertConfigurationIsValid(System.Collections.Generic.IEnumerable`1[AutoMapper.TypeMap])
+BaseException:
+AutoMapper.AutoMapperConfigurationException: The following member on ScreenScraper.Domain.CurrencyRateShort cannot be mapped: 
+	CurrencySource 
+Add a custom mapping expression, ignore, add a custom resolver, or modify the destination type ScreenScraper.Domain.CurrencyRateShort.
+Context:
+	Mapping to member CurrencySource from ScreenScraper.Domain.DTOs.CurrencyDto to ScreenScraper.Domain.CurrencyRateShort
+Exception of type 'AutoMapper.AutoMapperConfigurationException' was thrown.
+   at AutoMapper.ConfigurationValidator.AssertConfigurationIsValid(IEnumerable`1 typeMaps)
+   at ScreenScraper.Services.MappingService.CurrencyMappingBuilder.FromCurrencyRateReadingDto(IEnumerable`1 currenciesDto, IEnumerable`1 currencyRatesDto) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\MappingService\CurrencyMappingBuilder.cs:line 59
+   at ScreenScraper.Services.CurrencyRateProvider.BuildCurrencyReading(IEnumerable`1 objects) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\CurrencyRateProvider.cs:line 60
+   at ScreenScraper.Application.WebServiceScrapeManager.GetAndHandleScreenScrapeResult() in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Application\WebServiceScrapeManager.cs:line 57
+   at ScreenScraper.WebService.MeasurementFetchService.BuildMesurementReadings(RunParameters rp, List`1 result) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 93
+   at ScreenScraper.WebService.MeasurementFetchService.GetMesurementsFromParameters(String user, String password, DateTime startDate, DateTime endDate, IEnumerable`1 currencies) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 69
+2021-04-23 10:52:59 DEBUG [88]  ScreenScraper.WebService.MeasurementFetchService - Running GetMesurementsFromParameters
+2021-04-23 10:52:59 DEBUG [88]  ScreenScraper.WebService.MeasurementFetchService - Credentials:
+User Name: 'a', Password: 'b'
+StartDate: '2021-04-23 10:52:00 AM'
+EndDate: '2021-04-23 10:52:00 AM'
+List of Currencies:
+  Currency: , ID = 298
+
+2021-04-23 10:53:20 DEBUG [88]  ScreenScraper.WebService.MeasurementFetchService - Running GetMesurementsFromParameters
+2021-04-23 10:53:20 DEBUG [88]  ScreenScraper.WebService.MeasurementFetchService - Credentials:
+User Name: 'a', Password: 'b'
+StartDate: '2021-04-23 10:52:00 AM'
+EndDate: '2021-04-23 10:52:00 AM'
+List of Currencies:
+  Currency: , ID = 298
+
+2021-04-23 11:18:38 DEBUG [12]  ScreenScraper.WebService.MeasurementFetchService - Running GetMesurementsFromParameters
+2021-04-23 11:18:38 DEBUG [12]  ScreenScraper.WebService.MeasurementFetchService - Credentials:
+User Name: 'a', Password: 'b'
+StartDate: '2021-04-23 11:18:00 AM'
+EndDate: '2021-04-23 11:18:00 AM'
+List of Currencies:
+  Currency: , ID = 298
+
+2021-04-23 11:19:38 ERROR [12]  ScreenScraper.WebService.MeasurementFetchService - Exception:
+Error mapping types.
+
+Mapping types:
+IEnumerable`1 -> IEnumerable`1
+System.Collections.Generic.IEnumerable`1[[ScreenScraper.Domain.DTOs.CurrencyDto, ScreenScraper.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.IEnumerable`1[[ScreenScraper.Domain.CurrencyRateShort, ScreenScraper.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+Missing type map configuration or unsupported mapping.
+
+Mapping types:
+CurrencyDto -> CurrencyRateShort
+ScreenScraper.Domain.DTOs.CurrencyDto -> ScreenScraper.Domain.CurrencyRateShort
+StackTrace:
+   at lambda_method(Closure , IEnumerable`1 , IEnumerable`1 , ResolutionContext )
+   at ScreenScraper.Services.MappingService.CurrencyMappingBuilder.FromCurrencyRateReadingDto(IEnumerable`1 currenciesDto, IEnumerable`1 currencyRatesDto) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\MappingService\CurrencyMappingBuilder.cs:line 76
+   at ScreenScraper.Services.CurrencyRateProvider.BuildCurrencyReading(IEnumerable`1 objects) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\CurrencyRateProvider.cs:line 60
+   at ScreenScraper.Application.WebServiceScrapeManager.GetAndHandleScreenScrapeResult() in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Application\WebServiceScrapeManager.cs:line 57
+   at ScreenScraper.WebService.MeasurementFetchService.BuildMesurementReadings(RunParameters rp, List`1 result) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 93
+   at ScreenScraper.WebService.MeasurementFetchService.GetMesurementsFromParameters(String user, String password, DateTime startDate, DateTime endDate, IEnumerable`1 currencies) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 69
+Source:
+Anonymously Hosted DynamicMethods Assembly
+TargetSite:
+System.Collections.Generic.IEnumerable`1[ScreenScraper.Domain.CurrencyRateShort] lambda_method(System.Runtime.CompilerServices.Closure, System.Collections.Generic.IEnumerable`1[ScreenScraper.Domain.DTOs.CurrencyDto], System.Collections.Generic.IEnumerable`1[ScreenScraper.Domain.CurrencyRateShort], AutoMapper.ResolutionContext)
+BaseException:
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+CurrencyDto -> CurrencyRateShort
+ScreenScraper.Domain.DTOs.CurrencyDto -> ScreenScraper.Domain.CurrencyRateShort
+   at lambda_method(Closure , CurrencyDto , CurrencyRateShort , ResolutionContext )
+   at AutoMapper.Mapper.MapCore[TSource,TDestination](TSource source, TDestination destination, ResolutionContext context, Type sourceType, Type destinationType, IMemberMap memberMap)
+   at AutoMapper.ResolutionContext.Map[TSource,TDestination](TSource source, TDestination destination, IMemberMap memberMap)
+   at lambda_method(Closure , IEnumerable`1 , IEnumerable`1 , ResolutionContext )
+2021-04-23 11:30:57 DEBUG [20]  ScreenScraper.WebService.MeasurementFetchService - Running GetMesurementsFromParameters
+2021-04-23 11:30:57 DEBUG [20]  ScreenScraper.WebService.MeasurementFetchService - Credentials:
+User Name: 'a', Password: 'b'
+StartDate: '2021-04-23 11:30:00 AM'
+EndDate: '2021-04-23 11:30:00 AM'
+List of Currencies:
+  Currency: , ID = 298
+
+2021-04-23 11:35:20 ERROR [20]  ScreenScraper.WebService.MeasurementFetchService - Exception:
+Error mapping types.
+
+Mapping types:
+IEnumerable`1 -> IEnumerable`1
+System.Collections.Generic.IEnumerable`1[[ScreenScraper.Domain.DTOs.CurrencyRateShortDto, ScreenScraper.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.IEnumerable`1[[ScreenScraper.Domain.CurrencyRateShort, ScreenScraper.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+Missing type map configuration or unsupported mapping.
+
+Mapping types:
+CurrencyRateShortDto -> CurrencyRateShort
+ScreenScraper.Domain.DTOs.CurrencyRateShortDto -> ScreenScraper.Domain.CurrencyRateShort
+StackTrace:
+   at lambda_method(Closure , IEnumerable`1 , IEnumerable`1 , ResolutionContext )
+   at ScreenScraper.Services.MappingService.CurrencyMappingBuilder.FromCurrencyRateReadingDto(IEnumerable`1 currenciesDto, IEnumerable`1 currencyRatesDto) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\MappingService\CurrencyMappingBuilder.cs:line 75
+   at ScreenScraper.Services.CurrencyRateProvider.BuildCurrencyReading(IEnumerable`1 objects) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\CurrencyRateProvider.cs:line 60
+   at ScreenScraper.Application.WebServiceScrapeManager.GetAndHandleScreenScrapeResult() in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Application\WebServiceScrapeManager.cs:line 57
+   at ScreenScraper.WebService.MeasurementFetchService.BuildMesurementReadings(RunParameters rp, List`1 result) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 93
+   at ScreenScraper.WebService.MeasurementFetchService.GetMesurementsFromParameters(String user, String password, DateTime startDate, DateTime endDate, IEnumerable`1 currencies) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 69
+Source:
+Anonymously Hosted DynamicMethods Assembly
+TargetSite:
+System.Collections.Generic.IEnumerable`1[ScreenScraper.Domain.CurrencyRateShort] lambda_method(System.Runtime.CompilerServices.Closure, System.Collections.Generic.IEnumerable`1[ScreenScraper.Domain.DTOs.CurrencyRateShortDto], System.Collections.Generic.IEnumerable`1[ScreenScraper.Domain.CurrencyRateShort], AutoMapper.ResolutionContext)
+BaseException:
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+CurrencyRateShortDto -> CurrencyRateShort
+ScreenScraper.Domain.DTOs.CurrencyRateShortDto -> ScreenScraper.Domain.CurrencyRateShort
+   at lambda_method(Closure , CurrencyRateShortDto , CurrencyRateShort , ResolutionContext )
+   at AutoMapper.Mapper.MapCore[TSource,TDestination](TSource source, TDestination destination, ResolutionContext context, Type sourceType, Type destinationType, IMemberMap memberMap)
+   at AutoMapper.ResolutionContext.Map[TSource,TDestination](TSource source, TDestination destination, IMemberMap memberMap)
+   at lambda_method(Closure , IEnumerable`1 , IEnumerable`1 , ResolutionContext )
+2021-04-23 12:39:16 DEBUG [11]  ScreenScraper.WebService.MeasurementFetchService - Running GetMesurementsFromParameters
+2021-04-23 12:39:16 DEBUG [11]  ScreenScraper.WebService.MeasurementFetchService - Credentials:
+User Name: 'a', Password: 'b'
+StartDate: '2021-04-23 12:39:00 PM'
+EndDate: '2021-04-23 12:39:00 PM'
+List of Currencies:
+
+2021-04-23 12:39:21 ERROR [11]  ScreenScraper.WebService.MeasurementFetchService - Exception:
+
+Unmapped members were found. Review the types and members below.
+Add a custom mapping expression, ignore, add a custom resolver, or modify the source/destination type
+For no matching constructor, add a no-arg ctor, add optional arguments, or map all of the constructor parameters
+================================================================================
+CurrencyDto -> CurrencyRateShort (Destination member list)
+ScreenScraper.Domain.DTOs.CurrencyDto -> ScreenScraper.Domain.CurrencyRateShort (Destination member list)
+
+Unmapped properties:
+CurrencySource
+Date
+OfficialRate
+
+StackTrace:
+   at ScreenScraper.Services.MappingService.CurrencyMappingBuilder.FromCurrencyRateReadingDto(IEnumerable`1 currenciesDto, IEnumerable`1 currencyRatesDto) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\MappingService\CurrencyMappingBuilder.cs:line 78
+   at ScreenScraper.Services.CurrencyRateProvider.BuildCurrencyReading(IEnumerable`1 objects) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\CurrencyRateProvider.cs:line 60
+   at ScreenScraper.Application.WebServiceScrapeManager.GetAndHandleScreenScrapeResult() in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Application\WebServiceScrapeManager.cs:line 57
+   at ScreenScraper.WebService.MeasurementFetchService.BuildMesurementReadings(RunParameters rp, List`1 result) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 93
+   at ScreenScraper.WebService.MeasurementFetchService.GetMesurementsFromParameters(String user, String password, DateTime startDate, DateTime endDate, IEnumerable`1 currencies) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 69
+Source:
+AutoMapper
+TargetSite:
+Void AssertConfigurationIsValid(System.Collections.Generic.IEnumerable`1[AutoMapper.TypeMap])
+BaseException:
+AutoMapper.AutoMapperConfigurationException: 
+Unmapped members were found. Review the types and members below.
+Add a custom mapping expression, ignore, add a custom resolver, or modify the source/destination type
+For no matching constructor, add a no-arg ctor, add optional arguments, or map all of the constructor parameters
+================================================================================
+CurrencyDto -> CurrencyRateShort (Destination member list)
+ScreenScraper.Domain.DTOs.CurrencyDto -> ScreenScraper.Domain.CurrencyRateShort (Destination member list)
+
+Unmapped properties:
+CurrencySource
+Date
+OfficialRate
+
+   at AutoMapper.ConfigurationValidator.AssertConfigurationIsValid(IEnumerable`1 typeMaps)
+   at ScreenScraper.Services.MappingService.CurrencyMappingBuilder.FromCurrencyRateReadingDto(IEnumerable`1 currenciesDto, IEnumerable`1 currencyRatesDto) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\MappingService\CurrencyMappingBuilder.cs:line 78
+   at ScreenScraper.Services.CurrencyRateProvider.BuildCurrencyReading(IEnumerable`1 objects) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\CurrencyRateProvider.cs:line 60
+   at ScreenScraper.Application.WebServiceScrapeManager.GetAndHandleScreenScrapeResult() in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Application\WebServiceScrapeManager.cs:line 57
+   at ScreenScraper.WebService.MeasurementFetchService.BuildMesurementReadings(RunParameters rp, List`1 result) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 93
+   at ScreenScraper.WebService.MeasurementFetchService.GetMesurementsFromParameters(String user, String password, DateTime startDate, DateTime endDate, IEnumerable`1 currencies) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 69
+2021-04-23 12:41:14 DEBUG [11]  ScreenScraper.WebService.MeasurementFetchService - Running GetMesurementsFromParameters
+2021-04-23 12:41:14 DEBUG [11]  ScreenScraper.WebService.MeasurementFetchService - Credentials:
+User Name: 'a', Password: 'b'
+StartDate: '2021-04-23 12:39:00 PM'
+EndDate: '2021-04-23 12:39:00 PM'
+List of Currencies:
+  Currency: , ID = 298
+
+2021-04-23 12:41:18 ERROR [11]  ScreenScraper.WebService.MeasurementFetchService - Exception:
+
+Unmapped members were found. Review the types and members below.
+Add a custom mapping expression, ignore, add a custom resolver, or modify the source/destination type
+For no matching constructor, add a no-arg ctor, add optional arguments, or map all of the constructor parameters
+================================================================================
+CurrencyDto -> CurrencyRateShort (Destination member list)
+ScreenScraper.Domain.DTOs.CurrencyDto -> ScreenScraper.Domain.CurrencyRateShort (Destination member list)
+
+Unmapped properties:
+CurrencySource
+Date
+OfficialRate
+
+StackTrace:
+   at ScreenScraper.Services.MappingService.CurrencyMappingBuilder.FromCurrencyRateReadingDto(IEnumerable`1 currenciesDto, IEnumerable`1 currencyRatesDto) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\MappingService\CurrencyMappingBuilder.cs:line 78
+   at ScreenScraper.Services.CurrencyRateProvider.BuildCurrencyReading(IEnumerable`1 objects) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\CurrencyRateProvider.cs:line 60
+   at ScreenScraper.Application.WebServiceScrapeManager.GetAndHandleScreenScrapeResult() in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Application\WebServiceScrapeManager.cs:line 57
+   at ScreenScraper.WebService.MeasurementFetchService.BuildMesurementReadings(RunParameters rp, List`1 result) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 93
+   at ScreenScraper.WebService.MeasurementFetchService.GetMesurementsFromParameters(String user, String password, DateTime startDate, DateTime endDate, IEnumerable`1 currencies) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 69
+Source:
+AutoMapper
+TargetSite:
+Void AssertConfigurationIsValid(System.Collections.Generic.IEnumerable`1[AutoMapper.TypeMap])
+BaseException:
+AutoMapper.AutoMapperConfigurationException: 
+Unmapped members were found. Review the types and members below.
+Add a custom mapping expression, ignore, add a custom resolver, or modify the source/destination type
+For no matching constructor, add a no-arg ctor, add optional arguments, or map all of the constructor parameters
+================================================================================
+CurrencyDto -> CurrencyRateShort (Destination member list)
+ScreenScraper.Domain.DTOs.CurrencyDto -> ScreenScraper.Domain.CurrencyRateShort (Destination member list)
+
+Unmapped properties:
+CurrencySource
+Date
+OfficialRate
+
+   at AutoMapper.ConfigurationValidator.AssertConfigurationIsValid(IEnumerable`1 typeMaps)
+   at ScreenScraper.Services.MappingService.CurrencyMappingBuilder.FromCurrencyRateReadingDto(IEnumerable`1 currenciesDto, IEnumerable`1 currencyRatesDto) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\MappingService\CurrencyMappingBuilder.cs:line 78
+   at ScreenScraper.Services.CurrencyRateProvider.BuildCurrencyReading(IEnumerable`1 objects) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\CurrencyRateProvider.cs:line 60
+   at ScreenScraper.Application.WebServiceScrapeManager.GetAndHandleScreenScrapeResult() in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Application\WebServiceScrapeManager.cs:line 57
+   at ScreenScraper.WebService.MeasurementFetchService.BuildMesurementReadings(RunParameters rp, List`1 result) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 93
+   at ScreenScraper.WebService.MeasurementFetchService.GetMesurementsFromParameters(String user, String password, DateTime startDate, DateTime endDate, IEnumerable`1 currencies) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 69
+2021-04-23 12:41:25 DEBUG [11]  ScreenScraper.WebService.MeasurementFetchService - Running GetMesurementsFromParameters
+2021-04-23 12:41:25 DEBUG [11]  ScreenScraper.WebService.MeasurementFetchService - Credentials:
+User Name: 'a', Password: 'b'
+StartDate: '2021-04-23 12:39:00 PM'
+EndDate: '2021-04-23 12:39:00 PM'
+List of Currencies:
+  Currency: , ID = 298
+
+2021-04-23 12:41:33 ERROR [11]  ScreenScraper.WebService.MeasurementFetchService - Exception:
+
+Unmapped members were found. Review the types and members below.
+Add a custom mapping expression, ignore, add a custom resolver, or modify the source/destination type
+For no matching constructor, add a no-arg ctor, add optional arguments, or map all of the constructor parameters
+================================================================================
+CurrencyDto -> CurrencyRateShort (Destination member list)
+ScreenScraper.Domain.DTOs.CurrencyDto -> ScreenScraper.Domain.CurrencyRateShort (Destination member list)
+
+Unmapped properties:
+CurrencySource
+Date
+OfficialRate
+
+StackTrace:
+   at ScreenScraper.Services.MappingService.CurrencyMappingBuilder.FromCurrencyRateReadingDto(IEnumerable`1 currenciesDto, IEnumerable`1 currencyRatesDto) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\MappingService\CurrencyMappingBuilder.cs:line 78
+   at ScreenScraper.Services.CurrencyRateProvider.BuildCurrencyReading(IEnumerable`1 objects) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\CurrencyRateProvider.cs:line 60
+   at ScreenScraper.Application.WebServiceScrapeManager.GetAndHandleScreenScrapeResult() in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Application\WebServiceScrapeManager.cs:line 57
+   at ScreenScraper.WebService.MeasurementFetchService.BuildMesurementReadings(RunParameters rp, List`1 result) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 93
+   at ScreenScraper.WebService.MeasurementFetchService.GetMesurementsFromParameters(String user, String password, DateTime startDate, DateTime endDate, IEnumerable`1 currencies) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 69
+Source:
+AutoMapper
+TargetSite:
+Void AssertConfigurationIsValid(System.Collections.Generic.IEnumerable`1[AutoMapper.TypeMap])
+BaseException:
+AutoMapper.AutoMapperConfigurationException: 
+Unmapped members were found. Review the types and members below.
+Add a custom mapping expression, ignore, add a custom resolver, or modify the source/destination type
+For no matching constructor, add a no-arg ctor, add optional arguments, or map all of the constructor parameters
+================================================================================
+CurrencyDto -> CurrencyRateShort (Destination member list)
+ScreenScraper.Domain.DTOs.CurrencyDto -> ScreenScraper.Domain.CurrencyRateShort (Destination member list)
+
+Unmapped properties:
+CurrencySource
+Date
+OfficialRate
+
+   at AutoMapper.ConfigurationValidator.AssertConfigurationIsValid(IEnumerable`1 typeMaps)
+   at ScreenScraper.Services.MappingService.CurrencyMappingBuilder.FromCurrencyRateReadingDto(IEnumerable`1 currenciesDto, IEnumerable`1 currencyRatesDto) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\MappingService\CurrencyMappingBuilder.cs:line 78
+   at ScreenScraper.Services.CurrencyRateProvider.BuildCurrencyReading(IEnumerable`1 objects) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\CurrencyRateProvider.cs:line 60
+   at ScreenScraper.Application.WebServiceScrapeManager.GetAndHandleScreenScrapeResult() in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Application\WebServiceScrapeManager.cs:line 57
+   at ScreenScraper.WebService.MeasurementFetchService.BuildMesurementReadings(RunParameters rp, List`1 result) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 93
+   at ScreenScraper.WebService.MeasurementFetchService.GetMesurementsFromParameters(String user, String password, DateTime startDate, DateTime endDate, IEnumerable`1 currencies) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 69
+2021-04-23 12:42:24 DEBUG [33]  ScreenScraper.WebService.MeasurementFetchService - Running GetMesurementsFromParameters
+2021-04-23 12:42:24 DEBUG [33]  ScreenScraper.WebService.MeasurementFetchService - Credentials:
+User Name: 'a', Password: 'b'
+StartDate: '2021-04-23 12:42:00 PM'
+EndDate: '2021-04-23 12:42:00 PM'
+List of Currencies:
+  Currency: , ID = 0
+
+2021-04-23 12:45:09 ERROR [33]  ScreenScraper.WebService.MeasurementFetchService - Exception:
+Error mapping types.
+
+Mapping types:
+IEnumerable`1 -> IEnumerable`1
+System.Collections.Generic.IEnumerable`1[[ScreenScraper.Domain.DTOs.CurrencyDto, ScreenScraper.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.IEnumerable`1[[ScreenScraper.Domain.CurrencyRateShort, ScreenScraper.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+Missing type map configuration or unsupported mapping.
+
+Mapping types:
+CurrencyDto -> CurrencyRateShort
+ScreenScraper.Domain.DTOs.CurrencyDto -> ScreenScraper.Domain.CurrencyRateShort
+StackTrace:
+   at lambda_method(Closure , IEnumerable`1 , IEnumerable`1 , ResolutionContext )
+   at ScreenScraper.Services.MappingService.CurrencyMappingBuilder.FromCurrencyRateReadingDto(IEnumerable`1 currenciesDto, IEnumerable`1 currencyRatesDto) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\MappingService\CurrencyMappingBuilder.cs:line 81
+   at ScreenScraper.Services.CurrencyRateProvider.BuildCurrencyReading(IEnumerable`1 objects) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Services\CurrencyRateProvider.cs:line 60
+   at ScreenScraper.Application.WebServiceScrapeManager.GetAndHandleScreenScrapeResult() in C:\_projects\vs2019\ScreenScraper\ScreenScraper.Application\WebServiceScrapeManager.cs:line 57
+   at ScreenScraper.WebService.MeasurementFetchService.BuildMesurementReadings(RunParameters rp, List`1 result) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 93
+   at ScreenScraper.WebService.MeasurementFetchService.GetMesurementsFromParameters(String user, String password, DateTime startDate, DateTime endDate, IEnumerable`1 currencies) in C:\_projects\vs2019\ScreenScraper\ScreenScraper.WebService\MeasurementFetchService.svc.cs:line 69
+Source:
+Anonymously Hosted DynamicMethods Assembly
+TargetSite:
+System.Collections.Generic.IEnumerable`1[ScreenScraper.Domain.CurrencyRateShort] lambda_method(System.Runtime.CompilerServices.Closure, System.Collections.Generic.IEnumerable`1[ScreenScraper.Domain.DTOs.CurrencyDto], System.Collections.Generic.IEnumerable`1[ScreenScraper.Domain.CurrencyRateShort], AutoMapper.ResolutionContext)
+BaseException:
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+CurrencyDto -> CurrencyRateShort
+ScreenScraper.Domain.DTOs.CurrencyDto -> ScreenScraper.Domain.CurrencyRateShort
+   at lambda_method(Closure , CurrencyDto , CurrencyRateShort , ResolutionContext )
+   at AutoMapper.Mapper.MapCore[TSource,TDestination](TSource source, TDestination destination, ResolutionContext context, Type sourceType, Type destinationType, IMemberMap memberMap)
+   at AutoMapper.ResolutionContext.Map[TSource,TDestination](TSource source, TDestination destination, IMemberMap memberMap)
+   at lambda_method(Closure , IEnumerable`1 , IEnumerable`1 , ResolutionContext )
+2021-04-23 10:10:01 DEBUG [37]  ScreenScraper.WebService.MeasurementFetchService - Running GetMesurementsFromParameters
+2021-04-23 10:10:01 DEBUG [37]  ScreenScraper.WebService.MeasurementFetchService - Credentials:
+User Name: 'a', Password: 'b'
+StartDate: '2021-04-23 10:09:00 PM'
+EndDate: '2021-04-23 10:09:00 PM'
+List of Currencies:
+  Currency: , ID = 298
+
+2021-04-23 10:16:09 DEBUG [5]  ScreenScraper.WebService.MeasurementFetchService - Running GetMesurementsFromParameters
+2021-04-23 10:16:09 DEBUG [5]  ScreenScraper.WebService.MeasurementFetchService - Credentials:
+User Name: 'a', Password: 'b'
+StartDate: '2021-04-23 10:15:00 PM'
+EndDate: '2021-04-23 10:15:00 PM'
+List of Currencies:
+  Currency: , ID = 298
+
+2021-04-23 10:29:54 DEBUG [18]  ScreenScraper.WebService.MeasurementFetchService - Running GetMesurementsFromParameters
+2021-04-23 10:29:54 DEBUG [18]  ScreenScraper.WebService.MeasurementFetchService - Credentials:
+User Name: 'a', Password: 'b'
+StartDate: '2021-04-23 10:29:00 PM'
+EndDate: '2021-04-23 10:29:00 PM'
+List of Currencies:
+  Currency: , ID = 298
+
